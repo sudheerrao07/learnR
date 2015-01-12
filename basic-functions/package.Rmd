@@ -32,3 +32,22 @@ devtools::install_github("hadley/ggplot2")
 ```
 
 `devtools` will download the source code from GitHub and makes it a package for you.
+
+When you decide to unload a package from the library, you can use the following command. Keep in mind that it just offloads the package from the environment and does NOT uninstall the package.
+‘’’r
+detach(packages:devtools)
+or detach(package:devtools, unload = T)
+‘’’
+
+When you want view the list of packages that are installed on the system 
+‘’’r
+installed.packages()
+,,,
+
+Similarly, to view list of packages that have been called into the current working environment
+‘’’r
+library()
+,,,
+
+
+Similarly 
